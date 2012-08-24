@@ -19,7 +19,7 @@
 
 default['bflad']['username'] = "bflad"
 
-case platform_family
+case node['platform_family']
 when "mac_os_x"
   default['bflad']['home_dir'] = "/Users/#{node['bflad']['username']}"
   default['bflad']['application_support_dir'] = "#{node['bflad']['home_dir']}/Library/Application Support"
