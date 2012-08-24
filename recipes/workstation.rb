@@ -17,6 +17,9 @@
 # limitations under the License.
 #
 
+# Temporary fix for https://github.com/fnichol/chef-rvm/pull/120
+chef_gem "rvm"
+
 include_recipe "rvm::system"
 
 case platform_family
