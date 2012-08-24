@@ -1,3 +1,5 @@
+# chef-bflad [![Build Status](https://secure.travis-ci.org/bflad/chef-bflad.png?branch=master)](http://travis-ci.org/bflad/chef-bflad)
+
 # DESCRIPTION:
 
 Personal Chef Cookbook
