@@ -31,6 +31,9 @@ when "mac_os_x"
     owner node['bflad']['username']
     group staff
   end
+  link "/usr/local/bin/subl" do
+    to "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
+  end
 else
   Chef::Log.warn("Sorry, unsupported platform for workstation configuration.")
 end
