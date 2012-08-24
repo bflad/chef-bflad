@@ -28,8 +28,6 @@ case node['platform_family']
 when "mac_os_x"
   link "#{node['bflad']['application_support_dir']}/Sublime Text 2" do
     to "#{node['bflad']['dropbox_dir']}/Personal/Sublime Text 2"
-    owner node['bflad']['username']
-    group staff
   end
   link "/usr/local/bin/subl" do
     to "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
