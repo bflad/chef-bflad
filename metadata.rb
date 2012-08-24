@@ -11,6 +11,6 @@ recipe            "bflad::workstation", "Maintains workstation configurations."
   supports os
 end
 
-%w{ rvm }.each do |cb|
+%w{ homebrew rvm }.each do |cb|
   depends cb
 end

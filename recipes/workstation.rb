@@ -17,6 +17,8 @@
 # limitations under the License.
 #
 
+include_recipe "homebrew"
+
 # Temporary fix for https://github.com/fnichol/chef-rvm/pull/120
 chef_gem "rvm"
 
