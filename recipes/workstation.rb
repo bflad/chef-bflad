@@ -20,7 +20,7 @@
 include_recipe "rvm::system"
 
 case platform_family
-when mac_os_x
+when "mac_os_x"
   link "#{node['bflad']['application_support_dir']}/Sublime Text 2" do
     to "#{node['bflad']['dropbox_dir']}/Personal/Sublime Text 2"
     owner node['bflad']['username']

@@ -20,7 +20,7 @@
 default['bflad']['username'] = "bflad"
 
 case platform_family
-when mac_os_x
+when "mac_os_x"
   default['bflad']['home_dir'] = "/Users/#{node['bflad']['username']}"
   default['bflad']['application_support_dir'] = "#{node['bflad']['home_dir']}/Library/Application Support"
   default['bflad']['dropbox_dir'] = "#{node['bflad']['home_dir']}/Dropbox"
