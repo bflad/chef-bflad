@@ -35,3 +35,7 @@ when "mac_os_x"
 else
   Chef::Log.warn("Sorry, unsupported platform for workstation configuration.")
 end
+
+%w{ autojump }.each do |hbpkg|
+  homebrew_package hbpkg
+end
